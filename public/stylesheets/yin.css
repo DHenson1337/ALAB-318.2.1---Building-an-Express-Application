@@ -1,0 +1,99 @@
+/* yin.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  background-image: url("path/to/your/dark-texture.png"); /* Optional: add a subtle dark texture */
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #bbb;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #444;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark, minimalistic elements to reflect Yin */
+body::before {
+  content: "☯"; /* Yin Yang symbol */
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  color: white;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Optional additional Yin element: Dark edges around the page */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #333; /* Dark border for Yin edge effect */
+  pointer-events: none;
+}
+
+/* Animating the Yin text */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  animation: flicker 2s infinite; /* Flickering effect on the heading */
+}

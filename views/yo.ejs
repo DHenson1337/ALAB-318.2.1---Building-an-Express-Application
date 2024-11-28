@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= yo %></title>
+    <link rel="stylesheet" href="../stylesheets/yo.css">
+  </head>
+  <body>
+    <h1>Welcome to this side Yo!</h1>
+
+    <img src="https://i.gifer.com/fxc6.gif" alt="Yin-Yang-Yo-logo" />
+
+    <form action="/yo/submit" method="POST">
+      <label for="side">Choose your allegiance:</label>
+      <input type="text" id="side" name="side" required />
+      <button type="submit">Path Chosen</button>
+    </form>
+
+    <form action="/download" method="get">
+        <label for="description">Learn about each side!</label>
+        <button type="submit">Cultivate Knowledge</button>
+      </form>
+    </body>
+
+    <p>Skip the formalities:</p>
+    <a href="http://localhost:3000/yin">Yin</a>
+    <a href="http://localhost:3000/yang">Yang</a>
+  </body>
+</html>
