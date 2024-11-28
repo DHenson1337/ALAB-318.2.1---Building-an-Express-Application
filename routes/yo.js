@@ -2,7 +2,8 @@ const express = require(`express`);
 const router = express.Router();
 
 // GET route to render the form
-router.get(`/`, (req, res) => {
+//localhost:3000/yo
+http: router.get(`/`, (req, res) => {
   res.render(`yo`, { yo: "Yo" });
 });
 
